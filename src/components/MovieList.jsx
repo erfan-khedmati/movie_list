@@ -17,24 +17,24 @@ function MovieList() {
   if (loading) {
     return (
     <ul className="w-full max-w-[1280px] p-20 grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-      <li className="h-70 rounded-2xl bg-white/20"></li>
-      <li className="h-70 rounded-2xl bg-white/20"></li>
-      <li className="h-70 rounded-2xl bg-white/20"></li>
-      <li className="h-70 rounded-2xl bg-white/20"></li>
-      <li className="h-70 rounded-2xl bg-white/20"></li>
-      <li className="h-70 rounded-2xl bg-white/20"></li>
-      <li className="h-70 rounded-2xl bg-white/20"></li>
-      <li className="h-70 rounded-2xl bg-white/20"></li>
-      <li className="h-70 rounded-2xl bg-white/20"></li>
-      <li className="h-70 rounded-2xl bg-white/20"></li>
-      <li className="h-70 rounded-2xl bg-white/20"></li>
-      <li className="h-70 rounded-2xl bg-white/20"></li>
-      <li className="h-70 rounded-2xl bg-white/20"></li>
-      <li className="h-70 rounded-2xl bg-white/20"></li>
-      <li className="h-70 rounded-2xl bg-white/20"></li>
-      <li className="h-70 rounded-2xl bg-white/20"></li>
-      <li className="h-70 rounded-2xl bg-white/20"></li>
-      <li className="h-70 rounded-2xl bg-white/20"></li>
+      <li className="h-70 rounded-2xl bg-white/20 animate-pulse"></li>
+      <li className="h-70 rounded-2xl bg-white/20 animate-pulse"></li>
+      <li className="h-70 rounded-2xl bg-white/20 animate-pulse"></li>
+      <li className="h-70 rounded-2xl bg-white/20 animate-pulse"></li>
+      <li className="h-70 rounded-2xl bg-white/20 animate-pulse"></li>
+      <li className="h-70 rounded-2xl bg-white/20 animate-pulse"></li>
+      <li className="h-70 rounded-2xl bg-white/20 animate-pulse"></li>
+      <li className="h-70 rounded-2xl bg-white/20 animate-pulse"></li>
+      <li className="h-70 rounded-2xl bg-white/20 animate-pulse"></li>
+      <li className="h-70 rounded-2xl bg-white/20 animate-pulse"></li>
+      <li className="h-70 rounded-2xl bg-white/20 animate-pulse"></li>
+      <li className="h-70 rounded-2xl bg-white/20 animate-pulse"></li>
+      <li className="h-70 rounded-2xl bg-white/20 animate-pulse"></li>
+      <li className="h-70 rounded-2xl bg-white/20 animate-pulse"></li>
+      <li className="h-70 rounded-2xl bg-white/20 animate-pulse"></li>
+      <li className="h-70 rounded-2xl bg-white/20 animate-pulse"></li>
+      <li className="h-70 rounded-2xl bg-white/20 animate-pulse"></li>
+      <li className="h-70 rounded-2xl bg-white/20 animate-pulse"></li>
     </ul>
     )
   }
