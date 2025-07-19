@@ -4,6 +4,7 @@ import useFetch from "../hook/useFetch";
 
 //component
 import Pageination from "./Pageination";
+import Card from "./Card";
 
 function MovieList() {
   const [page, setPage] = useState(1);
@@ -16,41 +17,34 @@ function MovieList() {
 
   if (loading) {
     return (
-    <ul className="w-full max-w-[1280px] p-20 grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-      <li className="h-70 rounded-2xl bg-white/20 animate-pulse"></li>
-      <li className="h-70 rounded-2xl bg-white/20 animate-pulse"></li>
-      <li className="h-70 rounded-2xl bg-white/20 animate-pulse"></li>
-      <li className="h-70 rounded-2xl bg-white/20 animate-pulse"></li>
-      <li className="h-70 rounded-2xl bg-white/20 animate-pulse"></li>
-      <li className="h-70 rounded-2xl bg-white/20 animate-pulse"></li>
-      <li className="h-70 rounded-2xl bg-white/20 animate-pulse"></li>
-      <li className="h-70 rounded-2xl bg-white/20 animate-pulse"></li>
-      <li className="h-70 rounded-2xl bg-white/20 animate-pulse"></li>
-      <li className="h-70 rounded-2xl bg-white/20 animate-pulse"></li>
-      <li className="h-70 rounded-2xl bg-white/20 animate-pulse"></li>
-      <li className="h-70 rounded-2xl bg-white/20 animate-pulse"></li>
-      <li className="h-70 rounded-2xl bg-white/20 animate-pulse"></li>
-      <li className="h-70 rounded-2xl bg-white/20 animate-pulse"></li>
-      <li className="h-70 rounded-2xl bg-white/20 animate-pulse"></li>
-      <li className="h-70 rounded-2xl bg-white/20 animate-pulse"></li>
-      <li className="h-70 rounded-2xl bg-white/20 animate-pulse"></li>
-      <li className="h-70 rounded-2xl bg-white/20 animate-pulse"></li>
-    </ul>
-    )
+      <ul className="w-full max-w-[1280px] p-20 grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <li className="h-70 rounded-2xl bg-white/20 animate-pulse"></li>
+        <li className="h-70 rounded-2xl bg-white/20 animate-pulse"></li>
+        <li className="h-70 rounded-2xl bg-white/20 animate-pulse"></li>
+        <li className="h-70 rounded-2xl bg-white/20 animate-pulse"></li>
+        <li className="h-70 rounded-2xl bg-white/20 animate-pulse"></li>
+        <li className="h-70 rounded-2xl bg-white/20 animate-pulse"></li>
+        <li className="h-70 rounded-2xl bg-white/20 animate-pulse"></li>
+        <li className="h-70 rounded-2xl bg-white/20 animate-pulse"></li>
+        <li className="h-70 rounded-2xl bg-white/20 animate-pulse"></li>
+        <li className="h-70 rounded-2xl bg-white/20 animate-pulse"></li>
+        <li className="h-70 rounded-2xl bg-white/20 animate-pulse"></li>
+        <li className="h-70 rounded-2xl bg-white/20 animate-pulse"></li>
+        <li className="h-70 rounded-2xl bg-white/20 animate-pulse"></li>
+        <li className="h-70 rounded-2xl bg-white/20 animate-pulse"></li>
+        <li className="h-70 rounded-2xl bg-white/20 animate-pulse"></li>
+        <li className="h-70 rounded-2xl bg-white/20 animate-pulse"></li>
+        <li className="h-70 rounded-2xl bg-white/20 animate-pulse"></li>
+        <li className="h-70 rounded-2xl bg-white/20 animate-pulse"></li>
+      </ul>
+    );
   }
 
   return (
     <>
       <ul className="w-full max-w-[1280px] p-20 grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {data.data.map((item) => (
-          <li key={item.id} className="relative">
-            <img
-              src={item.poster}
-              alt={item.title}
-              className="w-full h-auto rounded-xl"
-            />
-            <div className="w-full absolute bottom-0 left-0 bg-black/40 rounded-b-xl p-5 text-center font-semibold">{item.title}</div>
-          </li>
+          <Card key={item.id} item={item} />
         ))}
       </ul>
       <Pageination
