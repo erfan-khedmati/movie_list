@@ -1,1 +1,17 @@
 @import "tailwindcss";
+
+
+/* Global scrollbar style */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #212121;
+  }
