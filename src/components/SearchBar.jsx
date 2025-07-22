@@ -18,7 +18,7 @@ function SearchBar() {
 
   useEffect(() => {
     const handleToggleModal = (e) => {
-      if (formRef.current.contains(e.target) && inputRef.current.contains(e.target) && searchValue.trim() != "") {
+      if (formRef.current.contains(e.target) || inputRef.current.contains(e.target) && searchValue.trim() != "") {
         setIsModalOpen(true);
       } else {
         setIsModalOpen(false);
